@@ -389,7 +389,7 @@ const StateWise = ()=>{
     
     return(
         <> 
-        {console.log(one)}
+       
       
 
 
