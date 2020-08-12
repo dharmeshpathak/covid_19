@@ -395,8 +395,7 @@ const StateWise = ()=>{
 
         
 
-      <div style={{display:"flex",flexDirection:"row",
-  flexWrap: "wrap",paddingLeft :"80px" }}> 
+      <div className = "container d-flex justify-content-center  flex-wrap align-content-xxl-center my-5" > 
       {arr.map((value,index)=>{
             return(
                 <Card key = {index} provinceState ={value.provinceState} active={value.active} confirmed={value.confirmed}  recovered={value.recovered} deaths = {value.deaths}/>)

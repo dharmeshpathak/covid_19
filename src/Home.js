@@ -72,9 +72,10 @@ function Home() {
 
     return(
     <>
-    <div style = {{backgroundColor:"lightgrey",
+    <div className ="my-5 py-5" style = {{backgroundColor:"lightgrey",
     backgroundBlendMode:"overlay",
-    height:"100vh"
+    height:"100%",
+    width:"100%"
     }} >
     <h1 style ={{textAlign:"center",
     color:"red",

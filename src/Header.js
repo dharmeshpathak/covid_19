@@ -13,10 +13,10 @@ function Header(){
         
 
 <Router>
-       <div>
+       <div className = "container  ">
       
-       <div className="navbar navbar-expand-lg navbar-light bg-light link" style ={{textAlign:"center"}}>
-       <div className="container-fluid link" style ={{textAlign:"center"}}>
+       <div className=" row navbar navbar-expand-lg navbar-light  link  " style = {{width:"100%"}}>
+       <div className=" col-lg-12 col-xl-12 col-md-12 col-sm-6 container-fluid link" >
             <ul style ={{textAlign:"center"}} className="navbar-nav">
             <li className="nav-item" style ={{textAlign:"center",}}>
             <NavLink  className="nav-link active " to="/home" exact activeStyle={ {color:'red'}  }>Home</NavLink>

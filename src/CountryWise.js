@@ -57,7 +57,7 @@ function CountryWise() {
 
     return(
     <>
-    <div style ={{textAlign:"center",
+    <div className= "my-5" style ={{textAlign:"center",
     color:"grey"
     ,marginBottom:"100px"
     }}>
