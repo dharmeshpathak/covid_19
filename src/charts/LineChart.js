@@ -14,9 +14,9 @@ function LineChart(props) {
         ],
         datasets: [
           {
-            label: "Covid cases today * 10000",
+            label: "Covid cases today * 1000",
            
-             data: [props.active/10000, props.recoverd/10000, props.death/10000],
+             data: [props.active/1000, props.recoverd/1000, props.death/1000],
             // data: [4, 5, 8],
             borderColor: ['rgba(255, 206, 86, 0.2)'],
             backgroundColor: ['rgba(255, 206, 86, 0.2)'],
@@ -33,15 +33,15 @@ function LineChart(props) {
           text: 'Covid Stats'
         },
         scales: {
-        //   yAxes: [
-        //     {
-        //       ticks: {
-        //         min: 0,
-        //         max: 10,
-        //         stepSize: 1
-        //       }
-        //     }
-        //   ]
+          yAxes: [
+            {
+              ticks: {
+                // min: 0,
+                // max: 10,
+                stepSize: 5000
+              }
+            }
+          ]
         }
       }
 

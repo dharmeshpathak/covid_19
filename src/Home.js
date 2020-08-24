@@ -2,6 +2,14 @@ import React ,{useState,useEffect} from 'react';
 // import ReactDOM from 'react-dom';
 
 import axios from 'axios';
+import LineChart from './charts/LineChart';
+
+
+
+
+
+
+
 
 
 
@@ -87,7 +95,7 @@ function Home() {
    padding:"5px",
    boxShadow:"2px"
    }}>
-   Total active cases-{JSON.stringify(confirmed.value)}
+   Total confirmed cases-{JSON.stringify(confirmed.value)}
    </p>
    <p style ={{textAlign:"center",fontSize:"20px",color:"grey",fontWeight:"bold",fontFamily:"Laila",
    padding:"5px",
@@ -98,6 +106,9 @@ function Home() {
    boxShadow:"2px"}}>Total Death cases-{JSON.stringify(deaths.value)}</p>
    {/* <p>Total Daily cases-{JSON.stringify(summary[0])}</p> */}
   
+   </div>
+   <div className="mb-5">
+     <LineChart active={JSON.stringify(confirmed.value)} recoverd={JSON.stringify(recovered.value)} death ={JSON.stringify(deaths.value)}   />
    </div>
  </>
     );
