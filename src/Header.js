@@ -15,8 +15,8 @@ function Header(){
 <Router>
        <div className = "container  ">
       
-       <div className=" row navbar navbar-expand-lg navbar-light  link  " style = {{width:"100%"}}>
-       <div className=" col-lg-12 col-xl-12 col-md-12 col-sm-6 container-fluid link" >
+       <div className=" row navbar navbar-expand-lg navbar-light  link  " >
+       <div className=" col-lg-12 col-xl-12 col-md-12 col-sm-6 container-fluid link flex-column" >
             <ul style ={{textAlign:"center"}} className="navbar-nav">
             <li className="nav-item" style ={{textAlign:"center",}}>
             <NavLink  className="nav-link active " to="/home" exact activeStyle={ {color:'red'}  }>Home</NavLink>
@@ -26,7 +26,7 @@ function Header(){
             </li>
              
             <li className="nav-item">
-            <NavLink className="nav-link active " to="/indianstates" exact activeStyle={    {color:'red'}}>Indian States </NavLink>
+            <NavLink className="nav-link active " to="/indianstates" exact activeStyle={{color:'red'}}>Indian States </NavLink>
             </li> 
             </ul>
             </div>
