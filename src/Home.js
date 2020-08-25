@@ -80,34 +80,34 @@ function Home() {
 
     return(
     <>
-    <div className ="my-5 py-5" style = {{backgroundColor:"lightgrey",
+    <div className ="my-5 py-5 shadow p-3 mb-5 bg-white rounded" style = {{backgroundColor:"white",
     backgroundBlendMode:"overlay",
     height:"100%",
     width:"100%"
     }} >
     <h1 style ={{textAlign:"center",
     color:"red",
-    fontFamily:"Laila"}}>Total Number of cases in the world -  </h1>
+    fontFamily:"Laila"}}>Total Number of cases in the world  </h1>
 
    <p 
-   style ={{textAlign:"center",fontSize:"20px",color:"grey",fontWeight:"bold",
+   style ={{textAlign:"center",fontSize:"20px",color:"black",fontWeight:"bold",
    fontFamily:"Laila",
    padding:"5px",
    boxShadow:"2px"
    }}>
    Total confirmed cases-{JSON.stringify(confirmed.value)}
    </p>
-   <p style ={{textAlign:"center",fontSize:"20px",color:"grey",fontWeight:"bold",fontFamily:"Laila",
+   <p style ={{textAlign:"center",fontSize:"20px",color:"black",fontWeight:"bold",fontFamily:"Laila",
    padding:"5px",
    boxShadow:"2px"}}>Total recovered cases-{JSON.stringify(recovered.value)}</p>
   
-   <p style ={{textAlign:"center",fontSize:"20px",color:"grey",fontWeight:"bold",fontFamily:"Laila",
+   <p style ={{textAlign:"center",fontSize:"20px",color:"black",fontWeight:"bold",fontFamily:"Laila",
    padding:"5px",
    boxShadow:"2px"}}>Total Death cases-{JSON.stringify(deaths.value)}</p>
    {/* <p>Total Daily cases-{JSON.stringify(summary[0])}</p> */}
   
    </div>
-   <div className="mb-5">
+   <div className="mb-5 shadow-sm p-3 mb-5 bg-white rounded">
      <LineChart active={JSON.stringify(confirmed.value)} recoverd={JSON.stringify(recovered.value)} death ={JSON.stringify(deaths.value)}   />
    </div>
  </>

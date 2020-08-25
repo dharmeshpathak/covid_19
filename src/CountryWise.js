@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import LineChart from "./charts/LineChart";
+import { red } from "color-name";
 
 function CountryWise() {
   const [city, setCity] = useState([]);
@@ -59,12 +60,12 @@ function CountryWise() {
     <>
       <div
         className="my-5"
-        style={{ textAlign: "center", color: "grey", marginBottom: "100px" }}
+        style={{ textAlign: "center", color: "black", marginBottom: "100px" }}
       >
         <h1
           style={{
             textAlign: "center",
-            color: "grey",
+            color: "black",
             marginBottom: "100px",
             fontFamily: "Laila",
             fontWeight: "bold"
@@ -80,7 +81,7 @@ function CountryWise() {
           onChange={e => setName(e.target.value)}
           style={{
             borderStyle: "solid",
-            borderColor: "grey",
+            borderColor: "red",
             padding: "2px",
             paddingLeft: "5px",
             color: "red"
@@ -90,9 +91,10 @@ function CountryWise() {
           onClick={onSubmit}
           style={{
             borderStyle: "solid",
-            borderColor: "lightgrey",
+            borderColor: "white",
             padding: "2px",
-            color: "black",
+            color: "white",
+            backgroundColor:"red",
             fontFamily: "calibiri",
             texTtransform: "capitalize"
           }}
@@ -135,7 +137,7 @@ function CountryWise() {
 
         
       </div>
-      <div className = "mb-5">
+      <div className = "mb-5 shadow p-3 mb-5 bg-white rounded ">
         <LineChart active={JSON.stringify(city.value)} recoverd={JSON.stringify(recovered.value)} death ={JSON.stringify(deaths.value)}  />
       </div>
     </>

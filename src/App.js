@@ -1,7 +1,6 @@
-//import React, { useState } from 'react';
 import React from 'react';
-// import { white } from 'color-name';
 import Header from './Header';
+import Footer from './Footer';
 
 
     
@@ -23,6 +22,8 @@ const App = ()=>{
             setCount(count + 1)
         }}style = {styleButton}>increment {count}</button> */}
         <Header/>
+        <Footer />
+       
         
         
         </>

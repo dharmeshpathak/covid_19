@@ -19,14 +19,14 @@ function Header(){
        <div className=" col-lg-12 col-xl-12 col-md-12 col-sm-6 container-fluid link flex-column" >
             <ul style ={{textAlign:"center"}} className="navbar-nav">
             <li className="nav-item" style ={{textAlign:"center",}}>
-            <NavLink  className="nav-link active " to="/home" exact activeStyle={ {color:'red'}  }>Home</NavLink>
+            <NavLink  className="nav-link active " to="/home" exact activeStyle={ {color:'black'}  } style={{color:"white"}}>Home</NavLink>
             </li>
             <li className="nav-item">
-            <NavLink className="nav-link active " to="/country" style ={{textAlign:"center",}} exact activeStyle={    {color:'red'}}>Check Country wise </NavLink>
+            <NavLink className="nav-link active " to="/country" style ={{color:"white"}} exact activeStyle={ {color:'black'}} >Check Country wise </NavLink>
             </li>
              
             <li className="nav-item">
-            <NavLink className="nav-link active " to="/indianstates" exact activeStyle={{color:'red'}}>Indian States </NavLink>
+            <NavLink className="nav-link active " to="/indianstates" exact activeStyle={{color:'black'}} style={{color:"white"}}>Indian States </NavLink>
             </li> 
             </ul>
             </div>

@@ -7,7 +7,8 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    background-color: lightgrey;
+    background-color: red;
+    color: white;
   
    text-decoration: none;
    text-align: center;
