@@ -18,10 +18,10 @@ function LineChart(props) {
            
              data: [props.active/1000, props.recoverd/1000, props.death/1000],
             // data: [4, 5, 8],
-            borderColor: ['rgba(255, 206, 86, 0.2)'],
-            backgroundColor: ['rgba(255, 206, 86, 0.2)'],
-            pointBackgroundColor: 'rgba(255, 206, 86, 0.2)',
-            pointBorderColor: 'rgba(255, 206, 86, 0.2)'
+            borderColor: ['rgba(255, 152, 0, 0.7)'],
+            backgroundColor: ['rgba(255, 235, 59, 0.3) '],
+            pointBackgroundColor: 'rgba(255, 206, 86, 0.8)',
+            pointBorderColor: 'rgba(255, 206, 86, 0.8)'
           }
          
         ]
