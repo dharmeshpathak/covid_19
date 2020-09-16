@@ -8,7 +8,6 @@ function Footer() {
     return (
         <>
          <Main />
-         <FontAwesomeIcon icon={["fab", "github"]} />
             <footer className="site-footer">
            
       
@@ -20,8 +19,8 @@ function Footer() {
             </p>
           </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
+          <div className="col-md-4 col-sm-6 col-xs-12">
+            <ul className="social-icons">
               <li><a className="facebook" href="nn#"><FontAwesomeIcon icon={faFacebook} /></a></li>
               <li><a className="twitter" href="#nnnm"><FontAwesomeIcon icon={faTwitter} /></a></li>
               <li><a className="dribbble" href="#bnbn"><FontAwesomeIcon icon={faDribbble} /> </a></li>

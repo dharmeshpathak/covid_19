@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import LineChart from "./charts/LineChart";
-import { red } from "color-name";
 
 function CountryWise() {
   const [city, setCity] = useState([]);
@@ -11,6 +10,7 @@ function CountryWise() {
   const [error, setError] = useState(false);
   const [name, setName] = useState("india");
   const [country, setCountry] = useState("india");
+  const [lastUpdate, setUpdated] = useState([]);
 
   const onSubmit = () => {
     if (name === null) {
@@ -50,14 +50,31 @@ function CountryWise() {
       .get(`https://covid19.mathdro.id/api/countries/${country}`)
       .then(res => {
         setDeath(res.data.deaths);
+        // setUpdated(res.data.lastUpdate)
       })
       .catch(err => {
         setError(error);
       });
   }, [error, country]);
 
+  useEffect(() => {
+    axios
+      .get(`https://covid19.mathdro.id/api/countries/${country}`)
+      .then((res) => {
+        
+         setUpdated(res.data)
+      })
+      .catch(err => {
+        setError(error);
+      });
+  }, [error, country]);
+
+   const d =  new Date(lastUpdate.lastUpdate);
+  //  console.log(d)
+
   return (
     <>
+    {/* <h1>{d} </h1> */}
       <div
         className="my-5"
         style={{ textAlign: "center", color: "black", marginBottom: "100px" }}
@@ -110,7 +127,8 @@ function CountryWise() {
             fontWeight: "bold"
           }}
         >
-          Total active cases in {country}-{JSON.stringify(city.value)}
+          Total active cases in {country}-{city.value}
+          {/* Total active cases in {country}-{JSON.stringify(city.value)} */}
         </p>
 
         <p
@@ -134,12 +152,23 @@ function CountryWise() {
         >
           Total Death cases in {country}-{JSON.stringify(deaths.value)}
         </p>
-
+       
+        <p
+          style={{
+            marginTop: "50px",
+            fontSize: "20px",
+            fontFamily: "Laila",
+            fontWeight: "bold"
+          }}
+        >
+         Last updated-{lastUpdate.lastUpdate}
+        </p>
         
       </div>
       <div className = "mb-5 shadow p-3 mb-5 bg-white rounded ">
         <LineChart active={JSON.stringify(city.value)} recoverd={JSON.stringify(recovered.value)} death ={JSON.stringify(deaths.value)}  />
       </div>
+      {/* {console.log(JSON.stringify(lastUpdate.lastUpdate))} */}
     </>
   );
 }

@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 //import { BrowserRouter as Router, Route,  NavLink, Switch } from 'react-router-dom'  
 import './index.css';  
 import App from './App';  
-import Main from './Main'
 // import About from './About'  
 // import Contact from './Contact'  
 // import Notfound from './NotFound'  
