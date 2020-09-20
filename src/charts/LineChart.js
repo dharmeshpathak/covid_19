@@ -47,7 +47,7 @@ function LineChart(props) {
 
     return (
         <div>
-        {console.log(props.active)}
+        
             <Line   data={data} options={options} />
         </div>
     )

@@ -13,11 +13,13 @@ function CountryWise() {
   const [lastUpdate, setUpdated] = useState([]);
 
   const onSubmit = () => {
-    if (name === null) {
+    if (name === "") {
       setCountry("India");
     }
 
-    setCountry(name);
+    else{
+      setCountry(name);
+    }
   };
 
   //  for contry cases confirmed
@@ -69,7 +71,7 @@ function CountryWise() {
       });
   }, [error, country]);
 
-   const d =  new Date(lastUpdate.lastUpdate);
+  //  const d =  new Date(lastUpdate.lastUpdate);
   //  console.log(d)
 
   return (
@@ -95,7 +97,7 @@ function CountryWise() {
           placeholder="Enter your country name"
           value={name}
           name="input"
-          onChange={e => setName(e.target.value)}
+          onChange={e => setName(e.target.value.trim())}
           style={{
             borderStyle: "solid",
             borderColor: "red",
