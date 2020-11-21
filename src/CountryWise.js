@@ -129,7 +129,7 @@ function CountryWise() {
             fontWeight: "bold"
           }}
         >
-          Total active cases in {country}-{city.value}
+          Total confirmed cases in {country}-{city.value}
           {/* Total active cases in {country}-{JSON.stringify(city.value)} */}
         </p>
 
