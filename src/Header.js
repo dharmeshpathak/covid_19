@@ -13,7 +13,7 @@ function Header(){
         
 
 <Router>
-       <div className = "container  ">
+       <div className = "container-fluid">
       
        <div className=" row navbar navbar-expand-lg navbar-light  link  " >
        <div className=" col-lg-12 col-xl-12 col-md-12 col-sm-6 container-fluid link flex-column" >
