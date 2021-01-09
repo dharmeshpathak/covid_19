@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/covid_19/static/css/main.73176fcd.chunk.css",
-    "main.js": "/covid_19/static/js/main.813c2995.chunk.js",
-    "main.js.map": "/covid_19/static/js/main.813c2995.chunk.js.map",
-    "runtime-main.js": "/covid_19/static/js/runtime-main.2930e9d5.js",
-    "runtime-main.js.map": "/covid_19/static/js/runtime-main.2930e9d5.js.map",
-    "static/js/2.b281ee7e.chunk.js": "/covid_19/static/js/2.b281ee7e.chunk.js",
-    "static/js/2.b281ee7e.chunk.js.map": "/covid_19/static/js/2.b281ee7e.chunk.js.map",
-    "index.html": "/covid_19/index.html",
-    "precache-manifest.e0d83a7bf84570a482702487e1f224cb.js": "/covid_19/precache-manifest.e0d83a7bf84570a482702487e1f224cb.js",
-    "service-worker.js": "/covid_19/service-worker.js",
-    "static/css/main.73176fcd.chunk.css.map": "/covid_19/static/css/main.73176fcd.chunk.css.map",
-    "static/js/2.b281ee7e.chunk.js.LICENSE.txt": "/covid_19/static/js/2.b281ee7e.chunk.js.LICENSE.txt",
-    "static/media/—Pngtree—stay at home covid-19 prevention_5357754.png": "/covid_19/static/media/—Pngtree—stay at home covid-19 prevention_5357754.b2036e5d.png"
+    "main.css": "/home/static/css/main.73176fcd.chunk.css",
+    "main.js": "/home/static/js/main.fa4f5353.chunk.js",
+    "main.js.map": "/home/static/js/main.fa4f5353.chunk.js.map",
+    "runtime-main.js": "/home/static/js/runtime-main.37096ce8.js",
+    "runtime-main.js.map": "/home/static/js/runtime-main.37096ce8.js.map",
+    "static/js/2.511ed866.chunk.js": "/home/static/js/2.511ed866.chunk.js",
+    "static/js/2.511ed866.chunk.js.map": "/home/static/js/2.511ed866.chunk.js.map",
+    "index.html": "/home/index.html",
+    "precache-manifest.47976dc2d13df6f73f88d5724c8571f6.js": "/home/precache-manifest.47976dc2d13df6f73f88d5724c8571f6.js",
+    "service-worker.js": "/home/service-worker.js",
+    "static/css/main.73176fcd.chunk.css.map": "/home/static/css/main.73176fcd.chunk.css.map",
+    "static/js/2.511ed866.chunk.js.LICENSE.txt": "/home/static/js/2.511ed866.chunk.js.LICENSE.txt",
+    "static/media/—Pngtree—stay at home covid-19 prevention_5357754.png": "/home/static/media/—Pngtree—stay at home covid-19 prevention_5357754.b2036e5d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2930e9d5.js",
-    "static/js/2.b281ee7e.chunk.js",
+    "static/js/runtime-main.37096ce8.js",
+    "static/js/2.511ed866.chunk.js",
     "static/css/main.73176fcd.chunk.css",
-    "static/js/main.813c2995.chunk.js"
+    "static/js/main.fa4f5353.chunk.js"
   ]
 }
