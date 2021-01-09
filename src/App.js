@@ -17,10 +17,7 @@ const App = ()=>{
 
     return(
         <>
-        {/* <h1 style = {styleHeading}>here is the counter -{count}</h1>
-        <button onClick = {()=>{
-            setCount(count + 1)
-        }}style = {styleButton}>increment {count}</button> */}
+        
         <Header/>
         <Footer />
        

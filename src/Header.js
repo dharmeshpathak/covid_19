@@ -22,7 +22,7 @@ function Header(){
             <NavLink  className="nav-link active " to="/home" exact activeStyle={ {color:'black'}  } style={{color:"white"}}>Home</NavLink>
             </li>
             <li className="nav-item">
-            <NavLink className="nav-link active " to="/country" style ={{color:"white"}} exact activeStyle={ {color :"black"}} >Check Country wise </NavLink>
+            <NavLink className="nav-link active " to="/country" style ={{color:"white"}} exact activeStyle={ {color :'black'}} >Check Country wise </NavLink>
             </li>
              
             <li className="nav-item">

@@ -55,25 +55,7 @@ function Home() {
             });
            
           });
-          // use effect for DailySummery
-        //   useEffect(() => {
-        //     axios
-        //     .get("https://covid19.mathdro.id/api/daily")
-        //     .then(res=>{setSummary(res.data);
-        //     })
-        //     .catch(err=>{setError(error)
-        //     });
-           
-        //   });
-    //   useEffect(() => {
-    //     axios
-    //     .get(`https://covid19.mathdro.id/api/countries/${country}`)
-    //     .then(res=>{setCity(res.data.confirmed);
-    //     })
-    //     .catch(err=>{setError(error)
-    //     });
-       
-    //   },[country]);
+          
 
     
 
