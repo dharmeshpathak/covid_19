@@ -1,6 +1,6 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route,  NavLink, Switch } from 'react-router-dom'  ;
+import { BrowserRouter as Router, Route,  NavLink, Switch  } from 'react-router-dom'  ;
 import StateWise from './StateWise'  ;
  import CountryWise from './CountryWise';
 import Home from './Home';  
@@ -33,7 +33,8 @@ function Header(){
 
         </div>
         <Switch>
-            <Route exact path = "/home" component = {Home} />
+            <Route exact path = "/home" component = {Home}/> 
+            
              <Route exact path="/country" component={CountryWise} />  
            <Route exact path="/indianstates" component={StateWise} />  
         </Switch>

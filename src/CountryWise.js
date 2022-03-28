@@ -11,6 +11,7 @@ function CountryWise() {
   const [name, setName] = useState("india");
   const [country, setCountry] = useState("india");
   const [lastUpdate, setUpdated] = useState([]);
+ 
 
   const onSubmit = () => {
     if (name === "") {
@@ -64,15 +65,16 @@ function CountryWise() {
       .get(`https://covid19.mathdro.id/api/countries/${country}`)
       .then((res) => {
         
-         setUpdated(res.data)
+        
+         setUpdated(res.data.lastUpdate?.slice(0,10))
+          
       })
       .catch(err => {
         setError(error);
       });
   }, [error, country]);
 
-  //  const d =  new Date(lastUpdate.lastUpdate);
-  //  console.log(d)
+  
 
   return (
     <>
@@ -118,7 +120,8 @@ function CountryWise() {
             texTtransform: "capitalize"
           }}
         >
-          Show Country Data
+       
+          Show Country Data 
         </button>
 
         <p
@@ -163,7 +166,8 @@ function CountryWise() {
             fontWeight: "bold"
           }}
         >
-         Last updated-{lastUpdate.lastUpdate}
+      
+         Last updated-{lastUpdate}
         </p>
         
       </div>
